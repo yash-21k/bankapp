@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { Component, OnInit } from "@angular/core";
 import { FormBuilder, FormGroup, Validators } from "@angular/forms";
 import { Observable, of } from "rxjs";
@@ -83,4 +84,9 @@ export class UserComponent implements OnInit {
       );
     }
   }
+=======
+
+export class UserComponent  {
+ 
+>>>>>>> 04e8f83626e012aef92cb05cb4b6886420b3410e
 }

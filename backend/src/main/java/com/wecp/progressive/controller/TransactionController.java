@@ -13,7 +13,10 @@ import org.springframework.web.bind.annotation.*;
 
 import java.sql.SQLException;
 import java.util.List;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 04e8f83626e012aef92cb05cb4b6886420b3410e
 @RestController
 @RequestMapping("/transactions")
 public class TransactionController {
@@ -92,4 +95,8 @@ public class TransactionController {
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 04e8f83626e012aef92cb05cb4b6886420b3410e

@@ -12,4 +12,8 @@ public interface AccountRepository extends JpaRepository<Accounts, Integer> {
 
     List<Accounts> getAccountsByCustomerCustomerId(int customerId);
     Accounts findByAccountId(int accountId);
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 04e8f83626e012aef92cb05cb4b6886420b3410e

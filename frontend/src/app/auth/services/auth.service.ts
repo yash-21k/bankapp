@@ -1,5 +1,6 @@
 import { Injectable } from "@angular/core";
 import { HttpClient, HttpHeaders } from "@angular/common/http";
+<<<<<<< HEAD
 import { environment } from "src/environments/environment";
 import { map, Observable } from "rxjs";
 // import { User } from "../types/user";
@@ -40,5 +41,33 @@ export class AuthService {
 
   createUser(user: Customer): Observable<Customer> {
     return this.http.post<Customer>(`${this.loginUrl}/customer/register`, user);
+=======
+import { map, Observable } from "rxjs";
+// import { User } from "../types/user";
+import { Customer } from "../../bank/types/customer";
+
+export class AuthService {
+  
+
+ 
+  constructor(private http: HttpClient) {}
+
+  login(user: Partial<Customer>): Observable<{ [key: string]: string }> {
+    
+  }
+
+  getToken() {
+    
+  }
+  getRole()
+  {
+    
+  }
+  getUsers(): Observable<Customer[]> {
+    
+  }
+
+  createUser(user: Customer): Observable<Customer> {
+>>>>>>> 04e8f83626e012aef92cb05cb4b6886420b3410e
   }
 }

@@ -1,4 +1,5 @@
 export class Customer {
+<<<<<<< HEAD
     customerId?: string;
     name: string;
     email: string;
@@ -31,3 +32,14 @@ export class Customer {
   
   
   
+=======
+  
+
+   
+}
+
+
+
+
+
+>>>>>>> 04e8f83626e012aef92cb05cb4b6886420b3410e

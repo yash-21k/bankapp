@@ -42,4 +42,8 @@ function register() {
 
     console.log("Register clicked. Name: " + name + ", Email: " + email + ", Username: " + username + ", Password: " + password);
 }
+<<<<<<< HEAD
 module.exports = { login, register };
+=======
+module.exports = { login, register };
+>>>>>>> 04e8f83626e012aef92cb05cb4b6886420b3410e

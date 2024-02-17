@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { Component, NgModule, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, FormsModule, Validators } from '@angular/forms';
 import { Observable, of } from 'rxjs';
@@ -68,5 +69,11 @@ export class EditCustomerComponent implements OnInit {
       );
     }
   }
+=======
+
+export class EditCustomerComponent  {
+
+ 
+>>>>>>> 04e8f83626e012aef92cb05cb4b6886420b3410e
 
 }

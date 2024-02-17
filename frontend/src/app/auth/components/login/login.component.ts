@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { Component, OnInit } from "@angular/core";
 import { FormBuilder, FormGroup, Validators } from "@angular/forms";
 import { Store } from "@ngrx/store";
@@ -54,4 +55,10 @@ export class LoginComponent implements OnInit {
         );
     }
   }
+=======
+
+
+export class LoginComponent  {
+  
+>>>>>>> 04e8f83626e012aef92cb05cb4b6886420b3410e
 }

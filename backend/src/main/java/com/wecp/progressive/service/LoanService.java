@@ -10,19 +10,30 @@ import java.util.List;
 
 @Service
 public class LoanService {
+<<<<<<< HEAD
     private final LoanRepository loanRepository;
 
     @Autowired
     public LoanService(LoanRepository loanRepository) {
         this.loanRepository = loanRepository;
     }
+=======
+    @Autowired
+    private LoanRepository loanRepository;
+
+    
+>>>>>>> 04e8f83626e012aef92cb05cb4b6886420b3410e
 
     public List<Loan> getAllLoans() {
         return loanRepository.findAll();
     }
 
     public Loan getLoanById(Long id) {
+<<<<<<< HEAD
         return loanRepository.findById(id).orElse(null);
+=======
+        return loanRepository.findById(id).get();
+>>>>>>> 04e8f83626e012aef92cb05cb4b6886420b3410e
     }
 
     public Loan createLoan(Loan loan) {
@@ -36,4 +47,8 @@ public class LoanService {
     public void deleteLoan(Long id) {
         loanRepository.deleteById(id);
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 04e8f83626e012aef92cb05cb4b6886420b3410e

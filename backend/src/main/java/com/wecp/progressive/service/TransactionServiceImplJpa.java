@@ -80,4 +80,8 @@ public class TransactionServiceImplJpa implements TransactionService {
         }
         return allTransactions;
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 04e8f83626e012aef92cb05cb4b6886420b3410e

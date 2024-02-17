@@ -2,7 +2,10 @@ package com.wecp.progressive.controller;
 
 
 import com.wecp.progressive.entity.Customers;
+<<<<<<< HEAD
 import com.wecp.progressive.service.CustomerLoginService;
+=======
+>>>>>>> 04e8f83626e012aef92cb05cb4b6886420b3410e
 import com.wecp.progressive.service.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -18,6 +21,7 @@ import java.util.List;
 public class CustomerController {
 
     private final CustomerService customerService;
+<<<<<<< HEAD
     private CustomerLoginService customerLoginService;
     @Autowired
     public CustomerController(@Qualifier("customerServiceImplJpa") CustomerService customerService, CustomerLoginService customerLoginService) {
@@ -26,6 +30,14 @@ public class CustomerController {
     }
 
 
+=======
+
+    @Autowired
+    public CustomerController(@Qualifier("customerServiceImplJpa") CustomerService customerService) {
+        this.customerService = customerService;
+    }
+
+>>>>>>> 04e8f83626e012aef92cb05cb4b6886420b3410e
     @GetMapping
     public ResponseEntity<List<Customers>> getAllCustomers() {
         try {
@@ -64,10 +76,16 @@ public class CustomerController {
     public ResponseEntity<Void> updateCustomer(@PathVariable int customerId, @RequestBody Customers customers) {
         try {
             customers.setCustomerId(customerId);
+<<<<<<< HEAD
             
             customerLoginService.updateUser(customers);
             return new ResponseEntity<>(HttpStatus.OK);
         } catch (Exception e) {
+=======
+            customerService.updateCustomer(customers);
+            return new ResponseEntity<>(HttpStatus.OK);
+        } catch (SQLException e) {
+>>>>>>> 04e8f83626e012aef92cb05cb4b6886420b3410e
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
@@ -99,4 +117,8 @@ public class CustomerController {
         List<Customers> customersList = customerService.getAllCustomersSortedByNameFromArrayList();
         return new ResponseEntity<>(customersList, HttpStatus.OK);
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 04e8f83626e012aef92cb05cb4b6886420b3410e

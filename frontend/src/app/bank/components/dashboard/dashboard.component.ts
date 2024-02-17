@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { Component, OnInit } from '@angular/core';
 import { BankService } from '../../services/bank.service';
 import { Customer } from '../../types/Customer';
@@ -96,5 +97,10 @@ export class DashboardComponent implements OnInit {
  
      //return null;
    }
+=======
+
+export class DashboardComponent  {
+ 
+>>>>>>> 04e8f83626e012aef92cb05cb4b6886420b3410e
 
 }

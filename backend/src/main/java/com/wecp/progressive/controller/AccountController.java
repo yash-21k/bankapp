@@ -1,6 +1,9 @@
 package com.wecp.progressive.controller;
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 04e8f83626e012aef92cb05cb4b6886420b3410e
 import com.wecp.progressive.entity.Accounts;
 import com.wecp.progressive.service.AccountService;
 
@@ -88,4 +91,8 @@ public class AccountController {
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 04e8f83626e012aef92cb05cb4b6886420b3410e

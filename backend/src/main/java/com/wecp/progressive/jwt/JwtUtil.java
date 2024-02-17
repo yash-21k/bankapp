@@ -1,6 +1,9 @@
 package com.wecp.progressive.jwt;
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 04e8f83626e012aef92cb05cb4b6886420b3410e
 import com.wecp.progressive.entity.Customers;
 import com.wecp.progressive.repository.CustomerRepository;
 import io.jsonwebtoken.Claims;

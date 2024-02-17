@@ -10,6 +10,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+<<<<<<< HEAD
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -18,6 +19,11 @@ public class CustomerServiceImpl implements CustomerService {
      @Autowired
      CustomerDAO customerDAO;
     
+=======
+public class CustomerServiceImpl implements CustomerService {
+
+    CustomerDAO customerDAO;
+>>>>>>> 04e8f83626e012aef92cb05cb4b6886420b3410e
     private static List<Customers> customersList = new ArrayList<>();
 
     public CustomerServiceImpl(CustomerDAO customerDAO) {
@@ -27,31 +33,47 @@ public class CustomerServiceImpl implements CustomerService {
     @Override
     public List<Customers> getAllCustomers() throws SQLException {
         return customerDAO.getAllCustomers();
+<<<<<<< HEAD
         //return null;
+=======
+>>>>>>> 04e8f83626e012aef92cb05cb4b6886420b3410e
     }
 
     @Override
     public Customers getCustomerById(int customerId) throws SQLException {
+<<<<<<< HEAD
        return customerDAO.getCustomerById(customerId);
        //return null;
+=======
+        return customerDAO.getCustomerById(customerId);
+>>>>>>> 04e8f83626e012aef92cb05cb4b6886420b3410e
     }
 
     @Override
     public int addCustomer(Customers customers) throws SQLException {
         return customerDAO.addCustomer(customers);
+<<<<<<< HEAD
         
+=======
+>>>>>>> 04e8f83626e012aef92cb05cb4b6886420b3410e
     }
 
     @Override
     public void updateCustomer(Customers customers) throws SQLException {
         customerDAO.updateCustomer(customers);
+<<<<<<< HEAD
         
+=======
+>>>>>>> 04e8f83626e012aef92cb05cb4b6886420b3410e
     }
 
     @Override
     public void deleteCustomer(int customerId) throws SQLException {
         customerDAO.deleteCustomer(customerId);
+<<<<<<< HEAD
         //return null;
+=======
+>>>>>>> 04e8f83626e012aef92cb05cb4b6886420b3410e
     }
 
     @Override
